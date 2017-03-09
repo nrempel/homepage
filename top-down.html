@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nicholas Rempel • Writing Software from the Top-down</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-38172025-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+      <p>
+        <i>I came across this article that I wrote a few years back and enjoyed reading it again so I thought I would throw it up here on my new site. If you have an opinion, I'd love to hear it!</i>
+      </p>
+
+      <h1>Writing Software from the Top-down</h1>
+      <p>
+        After a few years of writing software, I've settled on one thought process for planning what I create.  Whether I'm building a customer facing feature or a command-line utility, I start by thinking about the end-user experience.  
+      </p>
+
+      <p>
+        There are two angles to take when writing software:
+      </p>
+
+      <ol>
+        <li>
+          <span class="bold">Bottom-up</span> - determine the technical requirements first; then, build an experience around that framework
+        </li>
+        <li>
+          <span class="bold">Top-down</span> - plan the experience <i>assuming anything is possible</i> and consider the low-level details afterwards
+        </li>
+      </ol>
+
+      <h2>The Bottom-up Thinking Trap</h2>
+
+      <p>
+        When I'm planning something out, it's easy to fall into the trap of bottom up thinking.  My first inclination as a programmer is to figure out all of the details of what I'm going to implement and write them down.  I might ask myself several questions:
+      </p>
+
+      <ul>
+        <li>Do I need a new data model for this feature?</li>
+        <li>Do I need to manipulate any existing data models in new ways?</li>
+        <li>Is what I'm trying to accomplish feasible on a large data set?</li>
+      </ul>
+
+      <p>
+        Starting with this type of thinking is a trap.   Once I've finished putting up constraints based on technical limitations, what I'm left to work with is much less creative.
+      </p>
+
+      <p>Consider the following approach:</p>
+
+      <h2>The Top-down Approach</h2>
+
+      <p>
+        I assume anything is possible.  I talk to friends, colleagues, and strangers and ask what kind of experience they would expect. I draw out the flow of the feature on paper.  I mockup and animate the feature and ask for more feedback then iterate.
+      </p>
+
+      <p>
+        Once I've nailed down the final experience, I figure out what it takes to make it work.  This might be much more difficult and I might need to make some compromises, but the end result is much more satisfying.
+      </p>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Maybe this is obvious to others but I often fall into the trap of bottom-up thinking.  I find myself writing software and thinking about the requirements first, then building an experience around that.  Whenever I notice myself thinking this way, I flip it upside down.
+      </p>
+
+      <p>
+        Whether I'm building a shed, writing a new feature for a web product, or planning a trip, I take the top-down approach when creating something great.
+      </p>
+
+      <p>
+        <a href="https://twitter.com/nbrempel" title="Nicholas Rempel's Twitter"><i class="fa fa-twitter"></i></a>
+      </p>
+    </div>
+  </body>
+</html>
