@@ -17,6 +17,25 @@
       ga('send', 'pageview');
     </script>
 
+    <!-- Twitter -->
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +47,10 @@
 
   <body>
     <div class="wrapper">
-      <h1>Nicholas Rempel</h1>
+      <h1>Nicholas Rempel</h1> 
+      <a class="twitter-follow-button"
+        href="https://twitter.com/nbrempel">
+      Follow @nbrempel</a>
       <p>
         Hi there! Here, I share what I'm working on and thoughts that I want to share. I enjoy participating in discussion on Twitter so please tweet <a href="https://twitter.com/nbrempel" title="Nicholas Rempel's Twitter"><i class="fa fa-twitter"></i></a> at me. You can also send me a message <a href="mailto:nbrempel@gmail.com" title="Nicholas Rempel's Email"><i class="fa fa-envelope"></i></a> by email which I promise to respond to.
       </p>
