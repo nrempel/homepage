@@ -82,6 +82,41 @@ time {
   right: 10px;
 }
 
+.subscribe {
+  margin-top: 10px;
+}
+
+.subscribe input[type=text] {
+  border-radius: 3px;
+  border: 1px solid #1891AC;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-size: 1.4em;
+
+  height: 25px;
+  max-width: 120px;
+  padding: 0 6px;
+  vertical-align: bottom;
+}
+
+.subscribe input[type=submit] {
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #1891AC;
+  background-color: #1891AC;
+  outline: none;
+  /*font-size: 11px;*/
+  font-size: 1.4em;
+  height: 27px;
+  padding: 0 6px;
+  cursor: pointer;
+}
+
+.subscribe input[type=submit]:hover {
+  text-decoration: underline;
+}
+
 .back {
   font-size: 2em;
   text-decoration: none;

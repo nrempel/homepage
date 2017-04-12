@@ -52,9 +52,21 @@
   <body>
     <div class="wrapper">
       <h1>Nicholas Rempel</h1> 
-      <a class="twitter-follow-button"
-        href="https://twitter.com/nbrempel">
-      Follow @nbrempel</a>
+      <a class="twitter-follow-button" href="https://twitter.com/nbrempel">
+        Follow @nbrempel
+      </a>
+      <form
+        action="https://tinyletter.com/nbrempel"
+        method="post"
+        target="popupwindow"
+        class="subscribe"
+        onsubmit="window.open('https://tinyletter.com/nbrempel', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+      >
+        <input placeholder="email address" type="text" style="width:140px" name="email" id="tlemail" />
+        <input type="hidden" value="1" name="embed"/>
+        <input type="submit" value="Get updates" />
+      </form>
+
       <p>
         Hi there! Here, I share what I'm working on and thoughts that I want to share. I enjoy participating in discussion on Twitter so please tweet <a href="https://twitter.com/nbrempel" title="Nicholas Rempel's Twitter"><i class="fa fa-twitter"></i></a> at me. You can also send me a message <a href="mailto:nbrempel@gmail.com" title="Nicholas Rempel's Email"><i class="fa fa-envelope"></i></a> by email which I promise to respond to.
       </p>
@@ -67,13 +79,13 @@
         There are a handful of other active projects that I've worked on in the past or that I occasionally work on in my spare time:
       </p>
       <p>
-        <a href="https://pressites.com">Pressites</a> is a simple and shareable press release creator and hosting service. It was a fun project with the goal of automating a lot of the work done by <a href="http://www.thepresswriters.com/">The Press Writers</a>.
-      </p>
-      <p>
         <a href="https://bustaprice.com">Bustaprice</a> is a price comparison search engine. Many price comparison search sites have been around for over a decade and lack a modern experience. I wanted to see if I could create a similar price comparison site with a better experience.
       </p>
       <p>
         <a href="https://sitemapper.co">Sitemapper</a> is an SEO toolkit that is currently under development. There seems to be a lot of demand for SEO optimization tools and yet the landscape is littered with old and badly designed products. I hope Sitemapper can fill some of the gaps that exist.
+      </p>
+      <p>
+        <a href="https://pressites.com">Pressites</a> is a simple and shareable press release creator and hosting service. It was a fun project with the goal of automating a lot of the work done by <a href="http://www.thepresswriters.com/">The Press Writers</a>.
       </p>
       <h2>Thoughts &amp; Opinions</h2>
   
@@ -81,6 +93,7 @@
         <h3>
           April 2017
         </h3>
+        <a href="/posts/host-your-own.html">Host Your Own Content</a>
         <a href="/posts/cooking.html">Cooking for Yourself</a>
         <a href="/posts/productive-inbox.html">Maintaining a Productive Email Inbox</a>
         <h3>
@@ -98,6 +111,7 @@
         <a href="/recipes/easy-polenta.html">Easy Polenta</a>
       </div>
       </ul>
+
     </div>
   </body>
 </html>
