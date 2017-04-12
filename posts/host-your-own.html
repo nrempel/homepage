@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Host Your Own Content</title>
+
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-38172025-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Twitter -->
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+
+    <link rel="me" href="https://twitter.com/nbrempel">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+      <a href="/" class="back">&lt; <small>Home</small></a>
+      <form
+        action="https://tinyletter.com/nbrempel"
+        method="post"
+        target="popupwindow"
+        class="subscribe"
+        onsubmit="window.open('https://tinyletter.com/nbrempel', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+      >
+        <input placeholder="email address" type="text" style="width:140px" name="email" id="tlemail" />
+        <input type="hidden" value="1" name="embed"/>
+        <input type="submit" value="Get updates" />
+      </form>
+      <h1>Host Your Own Content</h1>
+      <time datetime="April 10, 2017">
+        April 10, 2017
+      </time>
+
+      <p>
+        There are some very popular websites out there that offer to host your content for you. Their pitch is that, by writing on their platform, you’ll have access to a network of other writers and readers. These companies make money—or at least they’ve convinced their investors that they will—by monetizing <span class="italic">your</span> content. Think about it: they sell what you write.
+      </p>
+
+      <p>
+        If the content you write has inherent value, why not host it yourself? And when I say host it yourself, I don’t mean you need to run the server yourself or be a programmer. I mean, host it somewhere where you control the domain, the content, and the experience. Personally, I like <a href="https://ghost.org">Ghost</a>.
+      </p>
+
+      <p>
+        Hosting your own content means you have control over it and the reader’s attention. By writing, you are creating value so harness it instead of giving it away for free.
+      </p>
+
+      <a data-size="large" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=">
+        Tweet
+      </a>
+
+    </div>
+  </body>
+</html>
