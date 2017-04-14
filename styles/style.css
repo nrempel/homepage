@@ -84,6 +84,7 @@ time {
 
 .subscribe {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .subscribe input[type=text] {
