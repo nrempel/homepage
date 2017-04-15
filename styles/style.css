@@ -87,7 +87,7 @@ time {
   margin-bottom: 10px;
 }
 
-.subscribe input[type=text] {
+.subscribe input[type=email] {
   border-radius: 3px;
   border: 1px solid #1891AC;
   padding: 0;
