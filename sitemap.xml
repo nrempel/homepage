@@ -7,52 +7,52 @@
 
 <url>
   <loc>https://rempel.world/</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://rempel.world/posts/generalist-specialist-leader.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://rempel.world/posts/electron.html</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rempel.world/posts/busy.html</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rempel.world/posts/exercise.html</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rempel.world/posts/host-your-own.html</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rempel.world/posts/cooking.html</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rempel.world/posts/productive-inbox.html</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rempel.world/posts/passwordless-method.html</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rempel.world/posts/top-down.html</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rempel.world/recipes/easy-polenta.html</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 </urlset>
