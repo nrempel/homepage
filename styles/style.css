@@ -40,6 +40,12 @@ p {
   line-height:1.5em;
 }
 
+figcaption {
+  font-size:1.3em;
+  line-height:1.4em;
+  font-style: italic;
+}
+
 ul li {
   margin-top: 1em;
   font-size:1.4em;
@@ -53,6 +59,7 @@ ol li {
 }
 
 code {
+  font-family: 'Noto Sans', sans-serif;
   white-space: nowrap;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -62,6 +69,17 @@ code {
 time {
   font-size: 1.5em;
   font-style: italic;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+hr { 
+  margin-top: 5em;
+  margin-bottom: 5em;
+  max-width: 18%;
+  text-align: center;
 }
 
 .list {
