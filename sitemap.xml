@@ -11,6 +11,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://rempel.world/posts/hacking-productivity.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://rempel.world/posts/generalist-specialist-leader.html</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>

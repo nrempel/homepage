@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.5em;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -82,15 +82,21 @@ hr {
   text-align: center;
 }
 
-.list {
-  font-size: 1.4em;
-  line-height: 2em;
-  padding-left: 1em;
+footer {
+  margin-top: 2em;
 }
 
-.list a {
-  display: block;
+ul {
   padding-left: 1em;
+  margin: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul li {
+  list-style: none;
+  margin: 0;
+  margin-top: 0.5em;
 }
 
 .twitter {
