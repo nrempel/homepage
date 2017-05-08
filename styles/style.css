@@ -99,6 +99,11 @@ ul li {
   margin-top: 0.5em;
 }
 
+.social {
+  margin: 0.5em 0;
+  font-size: 2.4em;
+}
+
 .twitter {
   font-size:2.25em;
   position: absolute;
