@@ -71,6 +71,10 @@ time {
   font-style: italic;
 }
 
+figure {
+  margin: 10px 0;
+}
+
 figure img {
   max-width: 100%;
 }
@@ -83,7 +87,8 @@ hr {
 }
 
 footer {
-  margin-top: 2em;
+  margin-top: 4em;
+  margin-bottom: 2em;
 }
 
 ul {
@@ -97,6 +102,53 @@ ul li {
   list-style: none;
   margin: 0;
   margin-top: 0.5em;
+}
+
+
+a {
+  color:#1891AC;
+}
+a:hover {
+  color:#1F5F8B;
+
+}
+a:active {
+  color:#1891AC;
+}
+header a {
+  text-decoration:none;
+  display:block;
+}
+header a:hover {
+  opacity:0.8;
+}
+header a:active {
+  opacity:0.7;
+}
+
+.disqus {
+  margin-top: 50px;
+}
+
+.disqus-comment-count {
+  background-color: #1891AC;
+  color: #ffffff;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 1px 3px;
+}
+
+.no-deco {
+  text-decoration: none;
+  color: inherit;
+}
+
+.no-deco:hover {
+  color: inherit;
+}
+
+.no-deco:active {
+  color: inherit;
 }
 
 .social {
@@ -157,37 +209,6 @@ ul li {
   /*margin-top: 0.4em;*/
   padding: 2em;
   max-width: 48em;
-}
-
-a {
-  color:#1891AC;
-  transition:color 0.6s ease-in-out;
-}
-a:hover {
-  color:#1F5F8B;
-  transition:color 0.3s ease-in-out;
-  transition:color 0.3s ease-in-out;
-  -moz-transition:color 0.3s ease-in-out;
-  -webkit-transition:color 0.3s ease-in-out;
-  > img {
-    opacity:0.9;
-  }
-}
-a:active {
-  color:#1891AC;
-  > img {
-    opacity:0.8;
-  }
-}
-header a {
-  text-decoration:none;
-  display:block;
-}
-header a:hover {
-  opacity:0.8;
-}
-header a:active {
-  opacity:0.7;
 }
 
 .inline-block {
@@ -251,6 +272,7 @@ header a:active {
 small, .small {
   font-size:0.8em;
 }
+
 .reverse {
   display:inline-block;
   -moz-transform:scaleX(-1);

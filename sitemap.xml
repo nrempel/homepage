@@ -11,6 +11,21 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://rempel.world/posts/turning-30.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rempel.world/posts/tomorrow-resolutions.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rempel.world/posts/kindle.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://rempel.world/posts/simple.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
