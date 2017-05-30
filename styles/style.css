@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size:1.4em;
-  line-height:1.5em;
+  line-height:1.6em;
 }
 
 figcaption {
@@ -49,13 +49,13 @@ figcaption {
 ul li {
   margin-top: 1em;
   font-size:1.4em;
-  line-height:1.5em;
+  line-height:1.6em;
 }
 
 ol li {
   margin-top: 1em;
   font-size:1.4em;
-  line-height:1.5em;
+  line-height:1.6em;
 }
 
 code {
@@ -128,6 +128,11 @@ header a:active {
 
 .disqus {
   margin-top: 50px;
+}
+
+.profile {
+  border: 1px solid black;
+  max-width: 100px;
 }
 
 .disqus-comment-count {
@@ -251,6 +256,12 @@ header a:active {
 .text-center {
   text-align:center;
 }
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
 .pull-right {
   float:right;
 }
@@ -280,4 +291,8 @@ small, .small {
   -webkit-transform:scaleX(-1);
   transform:scaleX(-1);
   filter:FlipH;
+}
+
+.gist-file .gist-data {
+  max-height: 300px;
 }

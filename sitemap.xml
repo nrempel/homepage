@@ -4,11 +4,22 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>https://rempel.world/</loc>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://rempel.world/reading.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rempel.world/posts/thoughts-anything-you-want.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rempel.world/posts/turning-30.html</loc>
