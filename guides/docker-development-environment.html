@@ -10,6 +10,7 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
+    <meta name="description" content="This guide will show you how to set up a docker development environment that enables new developers be productive in minutes with your complex software system.">
 
     <meta property="og:title" content="How to Set up a Super Productive Docker Development Environment">
     <meta property="og:type" content="article">
@@ -91,16 +92,16 @@
       </figure>
       <br>
 
-      <h2>Install Docker</h2>
+      <h2>Installing Docker</h2>
 
       <p>
-        Grab Docker for your operating system <a href="https://store.docker.com/search?type=edition&offering=community">here</a>. Docker is available for all modern operating systems. For most users, this will also include Docker Compose. Once installed, just keep Docker running in the background to use Docker commands. Easy!
+        Grab Docker for your operating system <a href="https://store.docker.com/search?type=edition&offering=community">here</a>. Docker is available for all modern operating systems. For most users, this will also include Docker Compose. Once installed, just keep Docker running in the background to use Docker commands!
       </p>
 
-      <h2>Write your Dockerfile</h2>
+      <h2>Dockerfile Example</h2>
 
       <p>
-        Your <a href="https://docs.docker.com/engine/reference/builder/">Dockerfile</a> is the blueprint for your container.  You’ll want to use your Dockerfile to create your desired environment. This includes installing any language runtimes you might need and installing any dependencies your project relies on. Luckily, most languages have a <a href="https://docs.docker.com/engine/reference/builder/#from">base image</a> that you can inherit.
+        Your <a href="https://docs.docker.com/engine/reference/builder/">Dockerfile</a> is the blueprint for your container.  You’ll want to use your Dockerfile to create your desired environment. This includes installing any language runtimes you might need and installing any dependencies your project relies on. Luckily, most languages have a <a href="https://docs.docker.com/engine/reference/builder/#from">base image</a> that you can inherit. We'll get dig into this further with the Dockerfile example below.
       </p>
 
       <p>
@@ -120,10 +121,10 @@
         Give it a try and run <code>docker-compose build</code> and see what happens.
       </p>
 
-      <h2>Write your docker-compose.yml</h2>
+      <h2>Docker Compose Example</h2>
 
       <p>
-        A few sections ago, I mentioned Docker Compose which is a tool to declaratively define your container formation. This means that you can define multiple different process types which all run concurrently in different containers and communicate with one another via http. Docker makes exposing interfaces between containers very easy by using what they call <a href="https://docs.docker.com/docker-cloud/apps/service-links/">links</a>. The beauty here is that it’s as simple as working with multiple processes on single machine but you can be sure that there are no tightly coupled components that might not work in a production environment!
+        A few sections ago, I mentioned Docker Compose which is a tool to declaratively define your container formation. This means that you can define multiple different process types which all run concurrently in different containers and communicate with one another via http. Docker makes exposing interfaces between containers easier by using what they call <a href="https://docs.docker.com/docker-cloud/apps/service-links/">links</a>. The beauty here is that it’s as simple as working with multiple processes on single machine but you can be sure that there are no tightly coupled components that might not work in a production environment!
       </p>
 
       <figure>
@@ -132,23 +133,19 @@
       </figure>
 
       <p>
-        Let’s walk through this relatively complex example:
+        Let’s walk through this example:
       </p>
 
       <p>
-        We have 7 different containers in our formation: <span class="italic">web</span>, <span class="italic">clock</span>, <span class="italic">worker</span>, <span class="italic">shell</span>, <span class="italic">postgres</span>, <span class="italic">rabbitmq</span>, and <span class="italic">redis</span>. That’s a lot! In a production environment, these processes might each run on separate physical servers distributed across the planet. Or, the processes all might run on a single machine.
+        We have 7 different containers in our formation: <span class="italic">web</span>, <span class="italic">clock</span>, <span class="italic">worker</span>, <span class="italic">shell</span>, <span class="italic">postgres</span>, <span class="italic">rabbitmq</span>, and <span class="italic">redis</span>. That’s a lot! In a production environment, these processes might each run on separate physical servers; or, the processes all might run on a single machine.
       </p>
 
       <p>
-        Notice how the web, clock, worker, and shell containers are all built from the current directory. So each of those 4 processes all run on the container that we defined in our Dockerfile. The postgres, rabbitmq, and redis containers, on the other hand, are built from prebuilt images which are found on the <a href="https://store.docker.com/">Docker Store</a>. It’s that easy to get started with all 3 of these tools!
+        Notice how the web, clock, worker, and shell containers are all built from the current directory. So each of those 4 processes all run on the container that we defined in our Dockerfile. The postgres, rabbitmq, and redis containers, on the other hand, are built from prebuilt images which are found on the <a href="https://store.docker.com/">Docker Store</a>. Building containers for these tools from images is much quicker than installing each of the tools on your local machine.
       </p>
 
       <p>
         Take a look at the <code>volumes</code> key. Here, we mounted our current directory at <code>/app</code>. Then the <code>working_dir</code> key indicates that all commands shall be run relative to this directory.
-      </p>
-
-      <p>
-        <span class="bold">Note:</span> an alternative to mounting our source code as a volume is to add it to the container during the build step by adding an instruction to the Dockerfile. You can use the instruction <code>ADD . /app</code> in the Dockerfile which is included in the example but commented out. I prefer using volumes because it allows us to use development tools like <a href="https://nodemon.io/">nodemon</a> which will restart our development server if any changes to the code are detected which is very handy.
       </p>
 
       <p>
@@ -191,22 +188,17 @@
       </figure>
 
       <p>
-        Boom, simple! Now, we don’t even need to worry about remembering docker-compose commands. To run our entire server stack we now simply run <code>./manage.sh start</code>. If we need to build our containers again because we changed our Dockerfile or we need to install new dependencies, we can just run <code>./manage.sh build</code>.
+        Done! Now, we don’t need to worry about remembering docker-compose commands. To run our entire server stack we now simply run <code>./manage.sh start</code>. If we need to build our containers again because we changed our Dockerfile or we need to install new dependencies, we can just run <code>./manage.sh build</code>.
       </p>
 
       <p>
         Our shell container exists so that we can shell into our container or just run one-off commands in the context of our container. Using the script above, you can run <code>./manage shell</code> to start a terminal session in the container. If you want to run a single command in your container, you can use <code>./manage run &lt;command&gt;</code>.
       </p>
 
-      <h2>Conclusion</h2>
-
       <p>
-        If you're familiar with the difficulty caused by complex development environments running on your local machine, then investigating a Docker powered development environment could save you time. There is a bit of set up involved but much less than you'd expect.
+        If you're familiar with the difficulty caused by complex development environments running on your local machine, then investigating a Docker powered development environment could save you time. There is a bit of set up involved but the productivity gained in the long term by using a tool like Docker pays for itself.
       </p>
 
-      <p>
-        Please let me know if this guide helps you or if you disagree with it!
-      </p>
 
       <form
         action="https://www.getrevue.co/profile/nbrempel/add_subscriber"
