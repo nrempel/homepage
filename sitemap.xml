@@ -7,87 +7,97 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>https://rempel.world/</loc>
+  <loc>https://nrempel.com/</loc>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://rempel.world/reading.html</loc>
+  <loc>https://nrempel.com/reading.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/thoughts-anything-you-want.html</loc>
+  <loc>https://nrempel.com/guides/docker-development-environment.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/turning-30.html</loc>
+  <loc>https://nrempel.com/posts/thoughts-start-small-stay-small.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/tomorrow-resolutions.html</loc>
+  <loc>https://nrempel.com/posts/thoughts-anything-you-want.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/kindle.html</loc>
+  <loc>https://nrempel.com/posts/turning-30.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/simple.html</loc>
+  <loc>https://nrempel.com/posts/tomorrow-resolutions.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/hacking-productivity.html</loc>
+  <loc>https://nrempel.com/posts/kindle.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/generalist-specialist-leader.html</loc>
+  <loc>https://nrempel.com/posts/simple.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/electron.html</loc>
+  <loc>https://nrempel.com/posts/hacking-productivity.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/busy.html</loc>
+  <loc>https://nrempel.com/posts/generalist-specialist-leader.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/exercise.html</loc>
+  <loc>https://nrempel.com/posts/electron.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/host-your-own.html</loc>
+  <loc>https://nrempel.com/posts/busy.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/cooking.html</loc>
+  <loc>https://nrempel.com/posts/exercise.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/productive-inbox.html</loc>
+  <loc>https://nrempel.com/posts/host-your-own.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/passwordless-method.html</loc>
+  <loc>https://nrempel.com/posts/cooking.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rempel.world/posts/top-down.html</loc>
+  <loc>https://nrempel.com/posts/productive-inbox.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nrempel.com/posts/passwordless-method.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nrempel.com/posts/top-down.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>

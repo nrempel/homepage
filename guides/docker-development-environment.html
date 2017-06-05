@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>How to Set up a Super Productive Docker Development Environment</title>
+    <title>The Complete Guide to a Super Productive Docker Development Environment</title>
 
     <meta name="author" content="Nicholas Rempel">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -12,20 +12,21 @@
 
     <meta name="description" content="This guide will show you how to set up a docker development environment that enables new developers be productive in minutes with your complex software system.">
 
-    <meta property="og:title" content="How to Set up a Super Productive Docker Development Environment">
+    <meta property="og:title" content="The Complete Guide to a Super Productive Docker Development Environment">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://rempel.world/guides/docker-development-environment.html">
-    <meta property="og:image" content="https://rempel.world/images/docker.png">
+    <meta property="og:url" content="https://nrempel.com/guides/docker-development-environment.html">
+    <meta property="og:image" content="https://nrempel.com/images/docker.png">
     <meta property="og:description" content="If you’ve ever worked on a large software system, I’m sure you’ve endured the pain of setting up a development environment for a complex system. Installing and configuring a database, message broker, web server, worker processes, local smtp server, and who knows what else is time consuming for every developer starting on the project. This guide will show you how to set up a docker development environment which will enable you and new developers to get up and running in minutes with even the most complex system.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@nbrempel">
     <meta name="twitter:creator" content="@nbrempel">
-    <meta name="twitter:title" content="How to Set up a Super Productive Docker Development Environment">
+    <meta name="twitter:title" content="The Complete Guide to a Super Productive Docker Development Environment">
     <meta name="twitter:description" content="If you’ve ever worked on a large software system, I’m sure you’ve endured the pain of setting up a development environment for a complex system. Installing and configuring a database, message broker, web server, worker processes, local smtp server, and who knows what else is time consuming for every developer starting on the project. This guide will show you how to set up a docker development environment which will enable you and new developers to get up and running in minutes with even the most complex system.">
-    <meta name="twitter:image" content="https://rempel.world/images/docker.png">
+    <meta name="twitter:image" content="https://nrempel.com/images/docker.png">
 
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <meta name="p:domain_verify" content="0e4f6221a1364d1d8213781426e116cf"/>
 
     <!-- Google Analytics -->
     <script>
@@ -59,7 +60,7 @@
     <link rel="me" href="https://twitter.com/nbrempel">
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--STYLES-->
@@ -72,7 +73,7 @@
     <div class="wrapper">
       <a href="/" class="back">&lt; <small>Nicholas Rempel</small></a>
 
-      <h1>How to Set up a Super Productive Docker Development Environment</h1>
+      <h1>The Complete Guide to a Super Productive Docker Development Environment</h1>
 
       <p>
         If you’ve ever worked on a large piece of software, I’m sure you’ve endured the pain of setting up a complex development environment. Installing and configuring a database, message broker, web server, worker processes, local smtp server, (and who knows what else!) is time consuming for every developer starting on a project. This guide will show you how to set up a docker development environment which will enable you and new developers to get up and running in minutes with even the most complex system. This will make your life much easier in the long run and get new developers up and running on the project much more quickly.
@@ -95,7 +96,7 @@
       <h2>Installing Docker</h2>
 
       <p>
-        Grab Docker for your operating system <a href="https://store.docker.com/search?type=edition&offering=community">here</a>. Docker is available for all modern operating systems. For most users, this will also include Docker Compose. Once installed, just keep Docker running in the background to use Docker commands!
+        Grab Docker for your operating system <a href="https://store.docker.com/search?type=edition&offering=community">here</a>. Docker is available for all modern operating systems. For most users, this will also include Docker Compose. Once installed, keep Docker running in the background to use Docker commands!
       </p>
 
       <h2>Dockerfile Example</h2>
@@ -114,7 +115,7 @@
       </figure>
 
       <p>
-        The Dockerfile above only does a couple things: first, we inherit from the <a href="https://store.docker.com/images/node">node</a> base image. This means that it includes the instructions from <a href="https://github.com/nodejs/docker-node/blob/581eebd097343c9f1c1ceb5260cd2ec770410e29/7.10/Dockerfile">that image’s Dockerfile</a> (including whatever base image it inherits from). Second, I install the <a href="https://yarnpkg.com">Yarn</a> package manager since I prefer it over the default NodeJs package manager. Note that while my preferred language here is NodeJs, this guide is language independent. Just set up your container for whatever language runtime you prefer to work in.
+        The Dockerfile above does a couple things: first, we inherit from the <a href="https://store.docker.com/images/node">node</a> base image. This means that it includes the instructions from <a href="https://github.com/nodejs/docker-node/blob/581eebd097343c9f1c1ceb5260cd2ec770410e29/7.10/Dockerfile">that image’s Dockerfile</a> (including whatever base image it inherits from). Second, I install the <a href="https://yarnpkg.com">Yarn</a> package manager since I prefer it over the default NodeJs package manager. Note that while my preferred language here is NodeJs, this guide is language independent. Set up your container for whatever language runtime you prefer to work in.
       </p>
       
       <p>
@@ -159,7 +160,7 @@
       <h2>Write your application code</h2>
 
       <p>
-        Ok, our server architecture includes 3 process types that run your application code; we have our web process that is responsible for serving web requests and pushing work to a job queue; we have our worker process that is responsible for pulling jobs off the queue and doing the work; and we have our clock process is effectively just a cron runner that pushes work onto our job queue.
+        Ok, our server architecture includes 3 process types that run your application code; we have our web process that is responsible for serving web requests and pushing work to a job queue; we have our worker process that is responsible for pulling jobs off the queue and doing the work; and we have our clock process is effectively a cron runner that pushes work onto our job queue.
       </p>
 
       <p>
@@ -188,11 +189,11 @@
       </figure>
 
       <p>
-        Done! Now, we don’t need to worry about remembering docker-compose commands. To run our entire server stack we now simply run <code>./manage.sh start</code>. If we need to build our containers again because we changed our Dockerfile or we need to install new dependencies, we can just run <code>./manage.sh build</code>.
+        Done! Now, we don’t need to worry about remembering docker-compose commands. To run our entire server stack we now simply run <code>./manage.sh start</code>. If we need to build our containers again because we changed our Dockerfile or we need to install new dependencies, we can run <code>./manage.sh build</code>.
       </p>
 
       <p>
-        Our shell container exists so that we can shell into our container or just run one-off commands in the context of our container. Using the script above, you can run <code>./manage shell</code> to start a terminal session in the container. If you want to run a single command in your container, you can use <code>./manage run &lt;command&gt;</code>.
+        Our shell container exists so that we can shell into our container or run one-off commands in the context of our container. Using the script above, you can run <code>./manage shell</code> to start a terminal session in the container. If you want to run a single command in your container, you can use <code>./manage run &lt;command&gt;</code>.
       </p>
 
       <p>
@@ -219,8 +220,8 @@
       <div class="disqus" id="disqus_thread"></div>
       <script>
       var disqus_config = function () {
-        this.page.url = 'https://rempel.world/posts/thoughts-start-small-stay-small.html'; 
-        this.page.identifier = 'https://rempel.world/posts/thoughts-start-small-stay-small.html';
+        this.page.url = 'https://nrempel.com/guides/docker-development-environment.html'; 
+        this.page.identifier = 'https://nrempel.com/guides/docker-development-environment.html';
       };
       (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
